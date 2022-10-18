@@ -24,6 +24,7 @@ class BeerController extends Controller
         ];
 
         Excel::export(new BeerExport($params), 'olw-report.xlsx');
+
         // Excel::
         // Excel::export()
 

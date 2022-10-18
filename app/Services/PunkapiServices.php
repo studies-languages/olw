@@ -15,7 +15,7 @@ class PunkapiServices
     {
         $params = array_filter(get_defined_vars());
 
-        dd($params);
+        // dd($params);
         return Http::punkapi()
             ->get('/beers', $params)
             ->json();
