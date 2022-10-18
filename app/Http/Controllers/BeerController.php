@@ -23,10 +23,7 @@ class BeerController extends Controller
             ['name' => 'Virgu', 'age' => 27]
         ];
 
-        Excel::export(new BeerExport($params), 'olw-report.xlsx');
-
-        // Excel::
-        // Excel::export()
+        Excel::store(new BeerExport($params), 'olw-report.xlsx');
 
         return 'export';
     }
